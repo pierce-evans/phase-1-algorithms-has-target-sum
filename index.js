@@ -1,17 +1,25 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  return array.some(
+    (num, i) => array.some(
+      (num2, n) => i !== n && num + num2 === target
+    )
+  )
 }
 
-/* 
+/*
   Write the Big O time complexity of your function here
+
 */
 
-/* 
+/*
   Add your pseudocode here
+
 */
 
 /*
   Add written explanation of your solution here
+
 */
 
 // You can run `node index.js` to view these console logs
